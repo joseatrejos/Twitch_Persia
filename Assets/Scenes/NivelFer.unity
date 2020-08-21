@@ -1762,7 +1762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734654241270362045, guid: 8a17556eec41d4646b05a7367ba5cd27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.8
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 8734654241270362045, guid: 8a17556eec41d4646b05a7367ba5cd27, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1770,7 +1770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734654241270362045, guid: 8a17556eec41d4646b05a7367ba5cd27, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.94
+      value: 12.76
       objectReference: {fileID: 0}
     - target: {fileID: 8734654241270362045, guid: 8a17556eec41d4646b05a7367ba5cd27, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2067,7 +2067,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845683021}
-  m_LocalRotation: {x: 0.24113557, y: -0.000000014854171, z: 0.0000000036907783, w: 0.97049147}
+  m_LocalRotation: {x: 0.24113555, y: -0.000000020731136, z: 0.0000000051510125, w: 0.97049147}
   m_LocalPosition: {x: 0, y: 7.7599998, z: -15.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2478,13 +2478,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021490522}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.42383423, y: -0.015917588, z: -0.013673565, w: 0.90549666}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 129.90399, y: 176.388, z: 176.581}
 --- !u!1001 &1025940811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3292,7 +3292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734654241270362045, guid: 8a17556eec41d4646b05a7367ba5cd27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.35
+      value: 2.64
       objectReference: {fileID: 0}
     - target: {fileID: 8734654241270362045, guid: 8a17556eec41d4646b05a7367ba5cd27, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3911,7 +3911,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1532146314818358897, guid: 27a2dc1213d17f643bf6664dfccde0c3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.54
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 1532146314818358897, guid: 27a2dc1213d17f643bf6664dfccde0c3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4295,6 +4295,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 232252552, guid: 246d8bfedbebbd947b32107e1e3dca2a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.35230535
+      objectReference: {fileID: 0}
+    - target: {fileID: 232252552, guid: 246d8bfedbebbd947b32107e1e3dca2a, type: 3}
+      propertyPath: m_Center.x
+      value: -0.006978319
+      objectReference: {fileID: 0}
+    - target: {fileID: 232252552, guid: 246d8bfedbebbd947b32107e1e3dca2a, type: 3}
+      propertyPath: m_Size.z
+      value: 0.44024006
+      objectReference: {fileID: 0}
+    - target: {fileID: 232252552, guid: 246d8bfedbebbd947b32107e1e3dca2a, type: 3}
+      propertyPath: m_Center.z
+      value: 0.5436579
+      objectReference: {fileID: 0}
     - target: {fileID: 8110380080760996014, guid: 246d8bfedbebbd947b32107e1e3dca2a, type: 3}
       propertyPath: m_Name
       value: Pillar_1 Variant
@@ -4614,7 +4630,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909533846}
-  m_LocalRotation: {x: 0.24113557, y: -0.000000014854171, z: 0.0000000036907783, w: 0.97049147}
+  m_LocalRotation: {x: 0.24113555, y: -0.000000020731136, z: 0.0000000051510125, w: 0.97049147}
   m_LocalPosition: {x: 0, y: 7.7599998, z: -15.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
