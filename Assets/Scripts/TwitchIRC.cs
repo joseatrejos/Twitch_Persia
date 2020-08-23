@@ -27,10 +27,14 @@ public class TwitchIRC : MonoBehaviour
 
     [SerializeField]
     GameObject winText;
+
+    Rigidbody rb;
     
     void Start()
     {
         Connect();
+
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -80,9 +84,13 @@ public class TwitchIRC : MonoBehaviour
                     isMoving = false;
                 }
 
-                if(message.Equals("!front"))
+                if(message.Equals("!front") || message.Equals("!top"))
                 {
                     trsCube.rotation = Quaternion.LookRotation(Vector3.forward);
+                }
+                if(message.Equals("!back") || message.Equals("!bot") || message.Equals("!bottom"))
+                {
+                    trsCube.rotation = Quaternion.LookRotation(Vector3.back);
                 }
                 if(message.Equals("!left"))
                 {
@@ -91,6 +99,12 @@ public class TwitchIRC : MonoBehaviour
                 if(message.Equals("!right"))
                 {
                     trsCube.rotation = Quaternion.LookRotation(Vector3.right);
+                }
+                
+                if(message.Equals("!jump"))
+                {
+                    Debug.Log("You're jumping!");
+                    rb.AddForce(transform.up * 500.0f);
                 }
            }
        }
