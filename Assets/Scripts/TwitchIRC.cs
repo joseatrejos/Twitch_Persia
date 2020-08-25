@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Net.Sockets;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class TwitchIRC : MonoBehaviour
 {
@@ -10,27 +11,34 @@ public class TwitchIRC : MonoBehaviour
     StreamReader reader;
     StreamWriter writer;
 
-    [SerializeField]
-    string username, password, channelName;
+    [SerializeField] string username, password, channelName;
 
-    [SerializeField]
-    Transform trsCube;
+    [SerializeField] Transform trsCube;
 
     float rotSpeed = 0;
 
-    [SerializeField]
-    float moveSpeed;
-    [SerializeField]
-    bool isMoving;
+    [SerializeField] float moveSpeed;
+
+    [SerializeField] bool isMoving;
 
     bool isGameEnded;
 
-    [SerializeField]
-    GameObject winText;
-    
+    [SerializeField] GameObject winText;
+
+    Rigidbody rb;
+
+    Vector3 respawnPoint;
+    Quaternion respawnAxis;
+
+    [SerializeField] string nextScene;
+
     void Start()
     {
         Connect();
+
+        rb = GetComponent<Rigidbody>();
+        respawnPoint = trsCube.position;
+        respawnAxis = trsCube.rotation;
     }
 
     void Update()
@@ -80,9 +88,13 @@ public class TwitchIRC : MonoBehaviour
                     isMoving = false;
                 }
 
-                if(message.Equals("!front"))
+                if(message.Equals("!front") || message.Equals("!top"))
                 {
                     trsCube.rotation = Quaternion.LookRotation(Vector3.forward);
+                }
+                if(message.Equals("!back") || message.Equals("!bot") || message.Equals("!bottom"))
+                {
+                    trsCube.rotation = Quaternion.LookRotation(Vector3.back);
                 }
                 if(message.Equals("!left"))
                 {
@@ -91,6 +103,12 @@ public class TwitchIRC : MonoBehaviour
                 if(message.Equals("!right"))
                 {
                     trsCube.rotation = Quaternion.LookRotation(Vector3.right);
+                }
+                
+                if(message.Equals("!jump"))
+                {
+                    Debug.Log("You're jumping!");
+                    rb.AddForce(transform.up * 500.0f);
                 }
            }
        }
@@ -103,8 +121,26 @@ public class TwitchIRC : MonoBehaviour
             isMoving = false;
             isGameEnded = true;
             winText.SetActive(true);
+            StartCoroutine(ChangeScene());
+        }
+        if(other.CompareTag("Respawn"))
+        {
+            isMoving = false;
+
+            trsCube.position = respawnPoint;
+            trsCube.rotation = respawnAxis;
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
         }
     }
+
+    IEnumerator ChangeScene()
+    {
+        yield return new WaitForSeconds(1.75f);
+
+        SceneManager.LoadScene(nextScene);
+    }
+
 
    bool Connected => twitchClient.Connected;
 
