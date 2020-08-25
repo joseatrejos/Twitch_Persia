@@ -255,6 +255,7 @@ MonoBehaviour:
   moveSpeed: 1.3
   isMoving: 0
   winText: {fileID: 1781647271}
+  nextScene: NivelFer
 --- !u!1001 &29416312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1181,7 +1182,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209743444}
-  m_LocalRotation: {x: 0.24113555, y: 0.000000020731136, z: -0.0000000051510125, w: 0.97049147}
+  m_LocalRotation: {x: 0.24113557, y: -0.000000014854171, z: 0.0000000036907783, w: 0.97049147}
   m_LocalPosition: {x: 0, y: 7.7599998, z: -15.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5151,7 +5152,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380900535}
-  m_LocalRotation: {x: 0.24113555, y: 0.000000020731136, z: -0.0000000051510125, w: 0.97049147}
+  m_LocalRotation: {x: 0.24113557, y: -0.000000014854171, z: 0.0000000036907783, w: 0.97049147}
   m_LocalPosition: {x: 0, y: 7.7599998, z: -15.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

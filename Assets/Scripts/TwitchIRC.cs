@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Net.Sockets;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class TwitchIRC : MonoBehaviour
 {
@@ -28,7 +29,9 @@ public class TwitchIRC : MonoBehaviour
 
     Vector3 respawnPoint;
     Quaternion respawnAxis;
-    
+
+    [SerializeField] string nextScene;
+
     void Start()
     {
         Connect();
@@ -118,6 +121,7 @@ public class TwitchIRC : MonoBehaviour
             isMoving = false;
             isGameEnded = true;
             winText.SetActive(true);
+            StartCoroutine(ChangeScene());
         }
         if(other.CompareTag("Respawn"))
         {
@@ -129,6 +133,14 @@ public class TwitchIRC : MonoBehaviour
             rb.angularVelocity = Vector3.zero;
         }
     }
+
+    IEnumerator ChangeScene()
+    {
+        yield return new WaitForSeconds(1.75f);
+
+        SceneManager.LoadScene(nextScene);
+    }
+
 
    bool Connected => twitchClient.Connected;
 
