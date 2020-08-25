@@ -12,16 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel Trejo.unity
     guid: 9aec6523c3f436a4ca2b0a8a4f68fd0e
   - enabled: 1
-    path: Assets/Scenes/NivelLuz.unity
+    path: Assets/Scenes/Nivel Luz.unity
     guid: b5d70f9595c1dc34cb9f666aeaa13420
   - enabled: 1
-    path: Assets/Scenes/NivelFran.unity
+    path: Assets/Scenes/Nivel Fran.unity
     guid: 302932cc6598ac245946ad40865a6e76
   - enabled: 1
-    path: Assets/Scenes/NivelFer.unity
+    path: Assets/Scenes/Nivel Fer.unity
     guid: 66708c91ebc280d4fbf66b7c38e31fcb
   - enabled: 1
-    path: Assets/Scenes/NivelAnaCota.unity
+    path: Assets/Scenes/Nivel Ana C.unity
     guid: f0c6f60ba5349a64182eac483400c2da
   - enabled: 1
     path: Assets/Scenes/Nivel Pablo.unity
@@ -51,12 +51,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel Araceli.unity
     guid: d5362c7b102a0a749af4d2c51bc36994
   - enabled: 1
-    path: Assets/Scenes/Level Jorge.unity
+    path: Assets/Scenes/Nivel Jorge.unity
     guid: aa032bdbdc8067a41a3bc52a40bafe5e
   - enabled: 1
-    path: Assets/Scenes/Level Benja.unity
+    path: Assets/Scenes/Nivel Benja.unity
     guid: ba3fbf1fb59621e46860ccfcd7d1ec9d
   - enabled: 1
-    path: Assets/Scenes/AnaBlanco.unity
+    path: Assets/Scenes/Nivel Blanco.unity
     guid: e649995bb34a7b24c81376129ea09632
   m_configObjects: {}
