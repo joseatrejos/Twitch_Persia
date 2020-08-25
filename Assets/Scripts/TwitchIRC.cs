@@ -10,31 +10,32 @@ public class TwitchIRC : MonoBehaviour
     StreamReader reader;
     StreamWriter writer;
 
-    [SerializeField]
-    string username, password, channelName;
+    [SerializeField] string username, password, channelName;
 
-    [SerializeField]
-    Transform trsCube;
+    [SerializeField] Transform trsCube;
 
     float rotSpeed = 0;
 
-    [SerializeField]
-    float moveSpeed;
-    [SerializeField]
-    bool isMoving;
+    [SerializeField] float moveSpeed;
+
+    [SerializeField] bool isMoving;
 
     bool isGameEnded;
 
-    [SerializeField]
-    GameObject winText;
+    [SerializeField] GameObject winText;
 
     Rigidbody rb;
+
+    Vector3 respawnPoint;
+    Quaternion respawnAxis;
     
     void Start()
     {
         Connect();
 
         rb = GetComponent<Rigidbody>();
+        respawnPoint = trsCube.position;
+        respawnAxis = trsCube.rotation;
     }
 
     void Update()
@@ -117,6 +118,15 @@ public class TwitchIRC : MonoBehaviour
             isMoving = false;
             isGameEnded = true;
             winText.SetActive(true);
+        }
+        if(other.CompareTag("Respawn"))
+        {
+            isMoving = false;
+
+            trsCube.position = respawnPoint;
+            trsCube.rotation = respawnAxis;
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
         }
     }
 
