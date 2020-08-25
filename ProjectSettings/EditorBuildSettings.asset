@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel Luz.unity
     guid: b5d70f9595c1dc34cb9f666aeaa13420
   - enabled: 1
-    path: Assets/Scenes/Nivel Fran.unity
+    path: Assets/Scenes/Nivel ReinaFran.unity
     guid: 302932cc6598ac245946ad40865a6e76
   - enabled: 1
     path: Assets/Scenes/Nivel Fer.unity
@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel Joel.unity
     guid: d3e52aa1dd1421a47bff873facf5ae68
   - enabled: 1
-    path: Assets/Scenes/Nivel Gabriel.unity
+    path: Assets/Scenes/Nivel Gabot.unity
     guid: a6ca9443e1bb412448901c50dd594aad
   - enabled: 0
     path: Assets/Scenes/Nivel Gabriel.unity

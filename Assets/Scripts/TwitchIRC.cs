@@ -136,7 +136,7 @@ public class TwitchIRC : MonoBehaviour
 
     IEnumerator ChangeScene()
     {
-        yield return new WaitForSeconds(1.75f);
+        yield return new WaitForSeconds(1.1f);
 
         SceneManager.LoadScene(nextScene);
     }
