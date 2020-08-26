@@ -2719,7 +2719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You Ganaste!
+  m_Text: 
 --- !u!222 &1803664950
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -39,14 +39,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel Gabot.unity
     guid: a6ca9443e1bb412448901c50dd594aad
   - enabled: 0
-    path: Assets/Scenes/Nivel Gabriel.unity
-    guid: 330f43711eb9b554ba831c8fe2ff8785
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Nivel Eliud.unity
     guid: b56aab13cde167d4caa0af4558147970
-  - enabled: 1
-    path: Assets/Scenes/Nivel Cesar 1.unity
-    guid: c9eadf5de68c1cf44a83ccd7096a65fc
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Nivel Araceli.unity
     guid: d5362c7b102a0a749af4d2c51bc36994
@@ -59,4 +59,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel Blanco.unity
     guid: e649995bb34a7b24c81376129ea09632
+  - enabled: 1
+    path: Assets/Scenes/Nivel Tonny.unity
+    guid: bb5a8c940aaab314d8bba6b6c635dd9e
+  - enabled: 1
+    path: Assets/Scenes/Nivel Cesar.unity
+    guid: b699235e0b57bfa419fc74193e91a162
   m_configObjects: {}
